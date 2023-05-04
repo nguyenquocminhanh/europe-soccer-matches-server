@@ -19,8 +19,10 @@ app.use('/api/one-competition', oneCompetitionRoutes);
 app.use('/api/one-player-matches', onePlayerMatchesRoutes);
 app.use('/api/one-player-info', onePlayerInfoRoutes);
 
-// const port = 3001;
+const port = 3001;
 
-// app.listen(port, () => {
-//     console.log(`Server started on port ${port}`);
-// })
+app.listen(port, () => {
+    console.log(`Server started on port ${port}`);
+})
+
+module.exports = app;
